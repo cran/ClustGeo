@@ -1,15 +1,27 @@
 Package: ClustGeo
 Type: Package
-Title: Clustering of Observations with Geographical Constraints
-Version: 1.0
-Date: 2015-06-22
-LazyData: TRUE
-Author: Amaury Labenne, Marie Chavent, Vanessa Kuentz-Simonet and Jerome Saracco
-Maintainer: Amaury Labenne <amaury.labenne@irstea.fr>
-Description: Functions which allow to integrate geographical constraints in Ward hierarchical clustering. Geographical maps of typologies obtained can be displayed with the use of shapefiles.
+Title: Hierarchical Clustering with Spatial Constraints
+Version: 2.0
+Authors@R: c(person("Marie", "Chavent", role = c("aut", "cre"),
+                    email = "Marie.Chavent@u-bordeaux.fr"),
+             person("Vanessa", "Kuentz", role = "aut"),
+             person("Amaury", "Labenne", role = "aut"),
+             person("Jerome", "Saracco", role = "aut"))
+Author: Marie Chavent [aut, cre],
+    Vanessa Kuentz [aut],
+    Amaury Labenne [aut],
+    Jerome Saracco [aut]
+Maintainer: Marie Chavent <Marie.Chavent@u-bordeaux.fr>
+Description: Implements a Ward-like hierarchical clustering
+    algorithm including spatial/geographical constraints.
+Depends: R (>= 3.0.0)
+Imports: sp, spdep
 License: GPL (>= 2.0)
-Depends: R(>= 2.10.0), rCarto, FactoMineR, plyr,
-Packaged: 2015-06-23 12:41:59 UTC; Amaury.Labenne
+LazyData: true
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
 NeedsCompilation: no
+Packaged: 2017-07-14 09:09:17 UTC; chavent
 Repository: CRAN
-Date/Publication: 2015-06-23 17:26:29
+Date/Publication: 2017-07-14 13:40:16 UTC
